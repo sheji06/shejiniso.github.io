@@ -1,36 +1,247 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>SAMPLE WEBSITE</title>
-    </head>
-    <body>
-              <P style="color:white;text-align:center;font-size: 75px;margin-top:300px;">  Hello Everyone welcome to my github account.</P>
-    </body>
-    <style>
-      body{
-        background:black;
-      }
-        p{
-            animation:animate 3s linear infinite;
-        }
-        @keyframes animate
-        {
-            0%
-            {
-                color:aqua;
-                
-            }
-            30%,70%
-            {
-                color:rgb(255, 0, 0);
-              
-            }
-        }
-    </style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dress Up Website </title>
+    <script src="https://use.fontawesome.com/746b91ae63.js"></script>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./styles.css">
+    <!-- aos CDN CSS Link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <header id="header">
+
+     
+        <div class="header-section">
+            
+            <nav>
+                <div class="logo">
+                    <h1><a href=""> Dress-<span class="second-text">Up</span></a></h1>
+                </div>
+                <input type="checkbox" id="click">
+                <label for="click" class="menu-btn">
+                    <i class="fa fa-bars"></i>
+                </label>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#services">Services</a></li>
+               <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+        <!-- <nav>
+            <div class="logo">
+                <h1> <a href="">Dress-<span class="second-text">Up</span></h1>
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fa fa-bars"></i>
+            </label>
+           
+           
+            <ul>
+               <li><a href="index.html" class="active">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#services">Services</a></li>
+               <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav> -->
+        
+        <div class="content">
+            <div data-aos="fade-up" data-aos-duration="3000">Your New Style</div>
+            <div data-aos="fade-down" data-aos-duration="3000"><a class="shop-now"  href="">SHOP NOW</a></div>
+        </div>
+        
+
+
+
+    </header>
+    <!-- service -->
+    <section class="services" id="services">
+        <h2 class="section-heading"> Services we're <span class="sub-heading">offering</span> </h2>
+
+        <div class="services-items">
+            <div class="service" data-aos="fade-up" data-aos-duration="3000"  >
+                <img src="./images/s1.jpg" alt="">
+                <div class="service-content">
+                    <h3>Measurements</h3>
+                </div>
+            </div>
+            <div class="service" data-aos="fade-down" data-aos-duration="3000"  >
+                <img src="./images/s2.jpg" alt="">
+                <div class="service-content">
+                    <h3>Repair</h3>
+                </div>
+            </div>
+            <div class="service" data-aos="fade-up" data-aos-duration="3000">
+                <img src="./images/s3.jpg" alt="">
+                <div class="service-content">
+                    <h3>Cutting-out</h3>
+                </div>
+            </div>
+            <div class="service" data-aos="fade-down" data-aos-duration="3000">
+                <img src="./images/s4.jpg" alt="">
+                <div class="service-content">
+                    <h3>Resize</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What we do -->
+    <section class="what-we-do">
+        <div class="what-we">
+            <h2 class="section-heading"> What <span class="sub-heading">we do</span> for our <span class="sub-heading">Clients ?</span>  </h2>
+        </div>
+
+        <div class="what-we-do-details">
+            <div class="what-we-do-item">
+                <div class="icon">
+                    <i class="fa fa-user"></i>
+                </div>
+                <h4 class="number">01</h4>
+                <h4><a href="" class="head-a">Unique Design</a></h4>
+                <p class="para"> Unique Clothing Design offers the best print-on-demand (POD) clothing for women, men, and kids who are avid pet lovers at the very lowest prices with different colors, sizes, and  free shipping </p>
+                <a class="readbtn" href="">Read More</a>
+            </div>
+
+            <div class="what-we-do-item">
+                <div class="icon">
+                    <i class="fa fa-cut"></i>
+                </div>
+                <h4 class="number">02</h4>
+                <h4><a href="" class="head-a">Custom Tailoring</a></h4>
+                <p  class="para"> Custom Tailoring is a personal tailoring brand offering a made to measure and bespoke service. Clients will enjoy a refined custom tailoring experience in a luxurious private environment.          </p>
+                <a class="readbtn" href="">Read More</a>
+            </div>
+
+             <div class="what-we-do-item">
+                <div class="icon">
+                    <i class="fa fa-user"></i>
+                </div>
+                <h4 class="number">03</h4>
+                <h4><a href="" class="head-a">Wedding Services</a></h4>
+                <p class="para"> Full Service Wedding Coordination packages are for the couple who want a full-time wedding professional overseeing every aspect of their wedding day or weekend.  This wedding planning package includes Pre-wedding and Wedding day. </p>
+                <a class="readbtn" href="">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about">
+            <div class="about-us " data-aos="fade-right">
+                <h2 class="section-heading1"> 25 <span class="sub-heading1">years</span> of experience  </h2>
+                <p class="para">
+                    Dress-up is a patent-pending online fashion design software that helps you create unlimited designs easier and faster than ever. Visualize your creations in 3D and get custom-fitted patterns in seconds.
+                </p>
+                <p class="para">
+                    From sketches to 3D samples to patterns, instant smart fashion design templates allow you to create original designs with a single click in seconds. They allow previewing 3D garment samples, flat sketches and made-to-measure sewing patterns, ready to download, cut and sew.
+                </p>
+                <a class="readbtn" href="">Know More About Us</a>
+            </div>
+            <div class="about-image" data-aos="fade-left">
+                <img src="./images/about.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Appoinment -->
+
+    <section class="Book-appoinement">
+        <div class="book-appoinment-section">
+            <div class="content-book" data-aos="fade-up" data-aos-duration="3000">
+                <h2 class="section-heading"> Your <span class="sub-heading">Design,</span> We <span class="sub-heading">Deliver</span>  </h2>
+                <div data-aos="fade-down" data-aos-duration="3000"><a class="shop-now"  href="">SHOP NOW</a></div>
+            </div>
+            <div class="book-button">
+                <form action="">
+                    <div class="form-input">
+                        <input type="text" name="name" id="name" placeholder="Name">
+                    </div>
+                    <div class="form-input">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="form-input">
+                        <input type="number" name="number" id="number" placeholder="Number">
+                    </div>
+                    <div class="form-input">
+                        <textarea name="" id="" cols="30" rows="50" placeholder="Type here--"></textarea>
+                    </div>
+                    <div class="form-input">
+                        <a class="shop-now"  href="">SUBMIT</a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="footer-section" id="contact">
+            <div class="footer">
+                <h2  class="footer-head">Dress- <span class="footer-subhead">Up</span></h2>
+                <p class="para">Dress-up is a patent-pending online fashion design software that helps you create unlimited designs easier and faster than ever. Visualize your creations in 3D and get custom-fitted patterns in seconds.</p>
+            </div>
+
+            <div class="footer">
+                <h2 class="footer-head2">Quick Link</h2>
+                <ul class="footer-lists">
+                    <li class="footer-list"><a href="#header" class="footerlist-a">Home</a></li>
+                    <li class="footer-list"><a href="#about" class="footerlist-a">About Us</a></li>
+                    <li class="footer-list"><a href="#services" class="footerlist-a">Services</a></li>
+                    <li class="footer-list"><a href="#contact" class="footerlist-a" >Contact</a></li>
+                   
+                </ul>
+            </div>
+
+            <div class="footer">
+                <h2 class="footer-head2">Contact Info</h2>
+                <ul class="footer-lists">
+                    <li class="footer-list"><i class="fa fa-phone"></i> <a href="" class="footerlist-a">+1223 456 790</a></li>
+                    <li class="footer-list"><i class="fa fa-envelope"></i> <a href="" class="footerlist-a">info@example.com</a></li>
+                    <li class="footer-list"><i class="fa fa-map-marker"></i> <a href="" class="footerlist-a">10001, 5th Avenue, #32841 block, USA</a></li>
+                    
+                   
+                </ul>
+            </div>
+
+            <div class="footer">
+                <h2 class="footer-head2">Opening Hours</h2>
+                <p class="para"
+                    Monday : 9:00 - 18:00<br>
+                    Tuesday : 10:00 - 19:00<br>
+                    Wednesday : 10:00 - 19:00<br>
+                    Thursday: 10:00 - 19:00<br>
+                    Friday : 10:00 - 19:00<br>
+                    Saturday :10:00 - 19:00<br>
+                    Sunday : Closed
+
+
+                </p>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copy-right">
+            <p>© 2023 Dress-Up. All rights reserved. Design by Nithya P</p>
+        </div>
+    </footer>
+
+
+
+    <!-- aos CDN JS Link -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     
-    
+</body>
 </html>
-
-
