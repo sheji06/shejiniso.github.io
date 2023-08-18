@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SAMPLE WEBSITE</title>
+    </head>
+    <body>
+              <P style="color:white;text-align:center;font-size: 75px;margin-top:300px;">  Hello Everyone welcome to my github account.</P>
+    </body>
+    <style>
+      body{
+        background:black;
+      }
+        p{
+            animation:animate 3s linear infinite;
+        }
+        @keyframes animate
+        {
+            0%
+            {
+                color:aqua;
+                
+            }
+            30%,70%
+            {
+                color:rgb(255, 0, 0);
+              
+            }
+        }
+    </style>
+    
+    
+</html>
+
+
